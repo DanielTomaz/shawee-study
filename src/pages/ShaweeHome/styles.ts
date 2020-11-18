@@ -66,13 +66,6 @@ export const ButtonsHeaderContainer = styled.div `
   padding: 2% 10% 0 10%;
 `;
 
-//Container que ficará o vídeo de background
-export const ContainerVideoHome = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
 //Este container irá conter tudo o que é sobre a empresa que está na home
 export const ContainerAboutUs = styled.div`
   display: flex;
@@ -268,6 +261,7 @@ export const ButtonPinkMedium = styled.button`
   margin: 5% auto 5%;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
@@ -334,6 +328,7 @@ export const ButtonWhite = styled.button`
   margin: 2% auto 5%;
   border-radius: 5px;
   transition: 0.2s;
+  cursor: pointer;
 
   :hover{
     background-color: var(--color-texts);
@@ -399,6 +394,7 @@ export const PinkButtonMegaRank = styled.button`
   margin: 3% auto 3%;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
@@ -454,6 +450,7 @@ export const ButtonPinkBlog = styled.button`
   margin: 3% auto 5%;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
@@ -489,6 +486,7 @@ export const ButtonPinkPlataform = styled.button`
   border: 0;
   border-radius: 5px;
   margin-top: 5%;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
@@ -568,6 +566,7 @@ export const ButtonPinkContactShawee = styled.button`
   border: 0;
   border-radius: 5px;
   margin: 0 0 50px 0;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
@@ -641,6 +640,7 @@ export const ButtonSend = styled.button`
   font-family: 'Roboto', sans-serif;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;

@@ -1,24 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import{
-  
+import {
+  ContainerVideoBackground,
   VideoBackground,
+  TransparentContainer,
   TitlePage,
   SourceVideo,
- 
-} from './styles';
-
+} from "./styles";
 
 const VideoHome: React.FC = () => {
-  const videoSource = "https://shawee.io/wp-content/themes/shawee-2/video/video.mp4";
-  return(
-
+  const videoSource =
+    "https://shawee.io/wp-content/themes/shawee-2/video/video.mp4";
+  return (
+    <ContainerVideoBackground>
       <VideoBackground autoPlay loop muted>
-        <TitlePage> SUA EMPRESA NO RADAR DOS TALENTOS DA TECNOLOGIA </TitlePage>
-        <SourceVideo  src={videoSource} type="video/mp4"/>
+       
+          <TitlePage>      
+            SUA EMPRESA NO RADAR DOS TALENTOS DA TECNOLOGIA
+          </TitlePage>
+        
+        <SourceVideo src={videoSource} type="video/mp4" />
       </VideoBackground>
-    
-  )
+    </ContainerVideoBackground>
+  );
 };
 
 export default VideoHome;

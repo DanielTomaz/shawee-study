@@ -21,7 +21,6 @@ import {
   LogoShawee,
   ButtonLanguage,
   ButtonsHeaderContainer,
-  ContainerVideoHome,
   ContainerAboutUs,
   CoitainerAboutUsShawee,
   ContainerShaweeAndTextShawee,
@@ -85,6 +84,7 @@ import {
   ContainerBottom,
   ContainerIconsBottom,
 } from "./styles";
+;
 
 
 const ShaweeHome: React.FC = () => {
@@ -97,20 +97,23 @@ const ShaweeHome: React.FC = () => {
         </ContainerHerderTop>
 
         <ButtonsHeaderContainer>
-          <HeaderDefault textButton="SOBRE NÓS" />
-          <HeaderDefault textButton="BENEFÍCIOS DE UM HACKATON" />
-          <HeaderDefault textButton="MEGA HACK" />
-          <HeaderDefault textButton="MEGA HANK" />
-          <HeaderDefault textButton="BLOG" />
-          <HeaderDefault textButton="CONTATO" />
+       
+              <HeaderDefault route="about-us" textButton="SOBRE NÓS" />
+              <HeaderDefault route="hackatons-benefits" textButton="BENEFÍCIOS DE UM HACKATON" />
+              <HeaderDefault route="mega-hack" textButton="MEGA HACK" />
+              <HeaderDefault route="mega-hank" textButton="MEGA HANK" />
+              <HeaderDefault route="blog-container" textButton="BLOG" />
+              <HeaderDefault route="container-contact" textButton="CONTATO" />
+           
+        
         </ButtonsHeaderContainer>
       </ContainerHeader>
-      <ContainerVideoHome>
+      
         
         <VideoHome />
-      </ContainerVideoHome>
+    
 
-      <ContainerAboutUs>
+      <ContainerAboutUs id="about-us">
         <CoitainerAboutUsShawee>
           <ContainerShaweeAndTextShawee>
             <TitleShawee>A SHAWEE</TitleShawee>
@@ -226,7 +229,7 @@ const ShaweeHome: React.FC = () => {
         />
       </ContainerLargeButton>
 
-      <CoitainerAboutUsShawee>
+      <CoitainerAboutUsShawee id='hackatons-benefits'>
         <ContainerBenefitsTexts>
           <TitleShawee>BENEFÍCIOS DE UM HACKATHON</TitleShawee>
           <TextDescriptionBenefits>
@@ -291,7 +294,7 @@ const ShaweeHome: React.FC = () => {
         <ImagesDecorationDefault url="https://shawee.io/wp-content/themes/shawee-2/img/fotos/3.jpg" />
       </ContainerImagesDecoration>
 
-      <ContainerHackaton>
+      <ContainerHackaton id='mega-hack'>
         <ContainerHackatonAnnouncement>
           <TitleHackatonAnnouncement>
             CONHEÇA O MAIOR HACKATHON ON-LINE DO BRASIL
@@ -342,7 +345,7 @@ const ShaweeHome: React.FC = () => {
       </ContainerHackaton>
 
       <ContainerHackaton>
-        <ContainerMegaHank>
+        <ContainerMegaHank id="mega-hank">
           <TitleShawee>MEGA RANK</TitleShawee>
           <ImageMegaRank src="https://shawee.io/wp-content/themes/shawee-2/img/megarank.png" />
         </ContainerMegaHank>
@@ -371,7 +374,7 @@ const ShaweeHome: React.FC = () => {
         <Slider />
       </ContainerSlider>
 
-      <ContainerBlog>
+      <ContainerBlog id="blog-container">
         <ContainerItemsBlog>
           <TitleBlog>AS ÚLTIMAS DO NOSSO BLOG</TitleBlog>
           <ButtonPinkBlog>Acessar o blog</ButtonPinkBlog>
@@ -436,7 +439,7 @@ const ShaweeHome: React.FC = () => {
         />
       </ContainerWhatTheSayAboutUsImage>
 
-      <ContainerForm>
+      <ContainerForm id="container-contact">
         <ContainerFormDivisorLeft>
           <TitleContactShawee>QUER RECEBER NOVIDADES DA SHAWEE?</TitleContactShawee>
           <InputDefault placeholderInput='Email *'/>
@@ -477,7 +480,8 @@ const ShaweeHome: React.FC = () => {
         <LogoShawee src='https://shawee.io/wp-content/themes/shawee-2/img/logo.png'/>
       </ContainerBottom>
     </ContainerHome>
-  );
+  )
+
 };
 
 export default ShaweeHome;

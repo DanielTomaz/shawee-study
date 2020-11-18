@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
-export const ButtonHeader = styled.button`
-  height: 50px;
+export const ButtonHeader = styled(Link)`
+  height: 40px;
   background: var(--primary);
-  color: #ffffff;
+  color: var(--color-texts);
   font-size: 16px;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;

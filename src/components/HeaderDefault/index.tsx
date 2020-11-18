@@ -5,12 +5,13 @@ import {
 } from './styles';
 
 export interface IHeaderProps{
-  textButton: string;
+  textButton: string,
+  route: string,
 }
 
 const HeaderDefault: React.FC<IHeaderProps> = (props) =>{
   return(
-    <ButtonHeader>
+    <ButtonHeader to={props.route} smooth={true} duration={1000}>
       {props.textButton}
     </ButtonHeader>
   )

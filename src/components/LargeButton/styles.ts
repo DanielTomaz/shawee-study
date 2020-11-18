@@ -15,6 +15,7 @@ export const LargeButtonDefault = styled.button<IStylesLargeButtonProps>`
   background-color: ${(props) => props.backgroundColor ? '#0000' : '#63398a'};
   color: ${(props) => props.fontColor ? '#e85b21' : '#ffffff'};
   border: 1px solid ${(props) => props.borderColor ? '#ffffff' : '#63398a'};
+  cursor: pointer;
 
   :hover{
     background-color: ${(props) => props.backgroundColor ? '#e85b21' : '#563278'};

@@ -12,6 +12,7 @@ export const ButtonPinkSmall = styled.button`
   margin: 3% auto 5%;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   :hover{
     opacity: 85%;
